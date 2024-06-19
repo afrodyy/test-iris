@@ -13,7 +13,7 @@
 
 	const fetchData = async () => {
 		try {
-			const response = await axios.get('/api/prototype/patients', {
+			const response = await axios.get('http://localhost:52773/api/prototype/patients', {
 				headers: {
 					Authorization: `Basic ${token}`
 				}
