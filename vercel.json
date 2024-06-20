@@ -1,17 +1,16 @@
 {
-    "routes": [
-      {
-        "src": "/api/v1/login",
-        "dest": "https://dev-hub.zicare.id/api/v1/login"
-      },
-      {
-        "src": "/api/v1/condition",
-        "dest": "https://dev-hub.zicare.id/api/v1/condition"
-      },
-      {
-        "src": "/api/prototype/patients",
-        "dest": "http://localhost:52773/api/prototype/patients"
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/api/v1/login",
+      "dest": "https://dev-hub.zicare.id/api/v1/login"
+    },
+    {
+      "src": "/api/v1/condition",
+      "dest": "https://dev-hub.zicare.id/api/v1/condition"
+    },
+    {
+      "src": "/api/prototype/patients",
+      "dest": "http://localhost:52773/api/prototype/patients"
+    }
+  ]
+}

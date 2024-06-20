@@ -13,7 +13,7 @@
 
 	const fetchData = async () => {
 		try {
-			const response = await axios.get('http://localhost:52773/api/prototype/patients', {
+			const response = await axios.get('/api/prototype/patients', {
 				headers: {
 					Authorization: `Basic ${token}`
 				}
@@ -27,13 +27,13 @@
 
 	const handleTest = async () => {
 		try {
-			const response = await axios.get('https://dev-hub.zicare.id/api/v1/condition', {
+			const response = await axios.get('/api/v1/condition', {
 				headers: {
-					Authorization: `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg3OTE1MzAuNDYxNTc5LCJleHAiOjE3MTg3OTUxMzAsImlzcyI6IkludGVyU3lzdGVtcyIsInN1YiI6IlNhdHVzZWhhdCIsInNpZCI6ImRmMUplYTF4K1htL3FMUFQ0TWpNYitPbiIsImFwcCI6Ii9hcGkvdjEvIn0.wE8n8cQM9rk4LR_KSoU9lWTkWdwcKsb53qLHXILOZLvWUvA4jBhoZ7UvcuSQDuyUDZTkV00gZAsyDhqeGnPiANFTMYcD6LoHXYedjsIuuVMS7sSUTGrIZvXV41fw0JLRoHy862CeUnKpPAq8o-bgkYXUrm8uzmK-5vjA1Yww0gQvasWg6w06DNlobi6LRlxxLBOG16-nbfoPdTkW-Y__KLFWbJmGFa1-NGfRaqS89W99DE_2Qozn92hoIsV-NSvjV6RCi3rVcZBvKdPTzkWEmUH6SrZg1FdFuv0sscDD0ZTQjeI_9VQ1Vi34zzDCwWMbgwdoP1QuK5u8_qI3syPs4Q`
+					Authorization: `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg4NTA1MDYuNTQ1NzY5LCJleHAiOjE3MTg4NTQxMDYsImlzcyI6IkludGVyU3lzdGVtcyIsInN1YiI6IlNhdHVzZWhhdCIsInNpZCI6Im9aUzAxVmRPZ2pPQUJuTVFxWis2WERjQyIsImFwcCI6Ii9hcGkvdjEvIn0.O2QKkQVrL1nMGo0HrG-m-NOy6r8hviEURZ0jo1APgTSBdjbU8TDp9wtfPH1GVOA19FbV0kTPsM3OKM1CI04nL_jd7xhqRrE7J5rrn2nAsErVS35jkt77ZINOspU0F50HsHJUuc3kwOQpJEQV6_EkyrQ2s12tYFJGvvSX6gFDrxyFEqhtCwA5IK1C191nJjf41kP_SFVroDH219tIxgKZD-W9rhgT5BkxaPljedn3WNgdIXviwK3BtzRoe3DizZjU2906YPEArvRxd75Eaxvdqen46JDLJ8Kv_GHd3rgLWVsMqm97tyQYcCh04ZH-JiZBkPUjAEMLYFVCIFIpXL2sCw`
 				}
 			});
 
-			console.log(response);
+			console.log(response.data);
 		} catch (error) {
 			console.log(error);
 		}
